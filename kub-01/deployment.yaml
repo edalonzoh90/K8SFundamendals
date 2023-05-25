@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: kube-02
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kube-02
+  template:
+    metadata: 
+      labels:
+        app: kube-02
+    spec:
+      containers: 
+        - name: kube-02
+          image: edalonzoh/kub-01

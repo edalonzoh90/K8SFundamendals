@@ -43,3 +43,24 @@ https://minikube.sigs.k8s.io/docs/start/
 Installing Kubectl
 https://kubernetes.io/docs/tasks/tools/
 
+## Cheat sheet Minikube ##
+| Command | Description |
+| --- | --- |
+| `minikube dashboard` | Launch dashboard |
+| `minikube status` | Verify minikube status |
+| `minikube start --driver=virtualbox` | Run minikube |
+| `minikube service <service_name>` | Launch service running |
+
+## Cheat sheet Kubernetes ##
+| Command | Description |
+| --- | --- |
+| `kubectl get services`  | List running services |
+| `kubectl get pods`  | List pods |
+| `kubectl get deployments`  | List deployments |
+| `kubectl create deploymet <deployment_name> --image=<image>`  | Create a deployment -Imperative |
+| `kubectl expose deployment <deployment_name> --type=LoadBalancer --port=8080`  | Expose deployment -Imperative |
+| `kubectl apply -f deployment.yaml`  | Apply a yaml |
+| `kubectl -f=deployment.yaml -f=service.yaml`  | Apply 2 or more yaml |
+| `kubectl delete deployments,services -l group=example`  | Delete resources created |
+
+
