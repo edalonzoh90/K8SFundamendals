@@ -34,6 +34,9 @@ It's the comunnication device between the Worker node and the master node
 **10. What is kubectl?**  
 It's a tool to send instructions to the cluster
 
+**11. Managing Volumes in Kubernetes**  
+EmptyDir - Basic Volume - Useful with 1 only replica
+
 ## Tools ##
 **Minikube**  
 Minikube is local Kubernetes, focusing on making it easy to learn and develop for Kubernetes.  
