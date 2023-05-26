@@ -69,4 +69,5 @@ https://kubernetes.io/docs/tasks/tools/
 | `kubectl -f=deployment.yaml -f=service.yaml`  | Apply 2 or more yaml |
 | `kubectl delete deployments,services -l group=example`  | Delete resources created |
 
-
+## Documentation ## 
+https://udemy.com/course/docker-kubernetes-the-practical-guide/learn/lecture/22627841#overview
