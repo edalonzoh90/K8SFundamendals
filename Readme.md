@@ -36,6 +36,7 @@ It's a tool to send instructions to the cluster
 
 **11. Managing Volumes in Kubernetes**  
 EmptyDir - Basic Volume - Useful with 1 only replica
+hostPath - Basic Volume - Useful with more than one replica in the same node
 
 ## Tools ##
 **Minikube**  
