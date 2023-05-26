@@ -61,6 +61,8 @@ https://kubernetes.io/docs/tasks/tools/
 | `kubectl get services`  | List running services |
 | `kubectl get pods`  | List pods |
 | `kubectl get deployments`  | List deployments |
+| `kubectl get pv`  | List persistent volume |
+| `kubectl get pvc`  | List persisten volume claims |
 | `kubectl create deploymet <deployment_name> --image=<image>`  | Create a deployment -Imperative |
 | `kubectl expose deployment <deployment_name> --type=LoadBalancer --port=8080`  | Expose deployment -Imperative |
 | `kubectl apply -f deployment.yaml`  | Apply a yaml |
