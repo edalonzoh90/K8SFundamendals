@@ -47,16 +47,6 @@ hostPath - Basic Volume - Useful with more than one replica in the same node
     - Specifications
     - Status
 
-**Installing UI Dashboards**  
-` kubectl apply -f nginx-depl.yaml `  
-` kubectl apply -f nginx-serv.yaml `  
-` kubectl apply  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.1.0/aio/deploy/recommended.yaml `  
-` kubectl apply -f dashboard-adminuser.yaml `  
-` kubectl apply -f .\ClusterRoleBinding.yaml `  
-` kubectl -n kubernetes-dashboard create token admin-user `  
-` kubectl proxy `  
-` http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/deployment?namespace=default `  
-
 ## Tools ##
 **Minikube**  
 Minikube is local Kubernetes, focusing on making it easy to learn and develop for Kubernetes.  
@@ -93,4 +83,4 @@ https://kubernetes.io/docs/tasks/tools/
 
 ## Documentation ## 
 https://udemy.com/course/docker-kubernetes-the-practical-guide/learn/lecture/22627841#overview
-https://agilethought.udemy.com/course/deploying-net-microservices-with-k8s-aks-and-azure-devops/learn/lecture/24331646#overview
+https://udemy.com/course/deploying-net-microservices-with-k8s-aks-and-azure-devops/learn/lecture/24331646#overview
