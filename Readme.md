@@ -68,6 +68,7 @@ https://kubernetes.io/docs/tasks/tools/
 | `kubectl apply -f deployment.yaml`  | Apply a yaml |
 | `kubectl -f=deployment.yaml -f=service.yaml`  | Apply 2 or more yaml |
 | `kubectl delete deployments,services -l group=example`  | Delete resources created |
+| `kubectl exec <pod_name> it sh`  | Iteract with a pod |
 
 ## Documentation ## 
 https://udemy.com/course/docker-kubernetes-the-practical-guide/learn/lecture/22627841#overview
