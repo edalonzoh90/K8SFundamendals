@@ -38,6 +38,25 @@ It's a tool to send instructions to the cluster
 EmptyDir - Basic Volume - Useful with 1 only replica
 hostPath - Basic Volume - Useful with more than one replica in the same node
 
+**12. Types of kinds**  
+    - Deployment
+    - Service
+
+**12. Parts of Yaml file**  
+    - Metadata
+    - Specifications
+    - Status
+
+**Installing UI Dashboards**  
+` kubectl apply -f nginx-depl.yaml `  
+` kubectl apply -f nginx-serv.yaml `  
+` kubectl apply  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.1.0/aio/deploy/recommended.yaml `  
+` kubectl apply -f dashboard-adminuser.yaml `  
+` kubectl apply -f .\ClusterRoleBinding.yaml `  
+` kubectl -n kubernetes-dashboard create token admin-user `  
+` kubectl proxy `  
+` http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/deployment?namespace=default `  
+
 ## Tools ##
 **Minikube**  
 Minikube is local Kubernetes, focusing on making it easy to learn and develop for Kubernetes.  
@@ -69,6 +88,9 @@ https://kubernetes.io/docs/tasks/tools/
 | `kubectl -f=deployment.yaml -f=service.yaml`  | Apply 2 or more yaml |
 | `kubectl delete deployments,services -l group=example`  | Delete resources created |
 | `kubectl exec <pod_name> it sh`  | Iteract with a pod |
+| `kubectl get deployment <deployment_name> -o yaml`  | Get yaml format of the deployment configuration |
+| `kubectl describe service <service_name>`  | Get details about a service |
 
 ## Documentation ## 
 https://udemy.com/course/docker-kubernetes-the-practical-guide/learn/lecture/22627841#overview
+https://agilethought.udemy.com/course/deploying-net-microservices-with-k8s-aks-and-azure-devops/learn/lecture/24331646#overview
