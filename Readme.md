@@ -80,6 +80,9 @@ https://kubernetes.io/docs/tasks/tools/
 | `kubectl exec <pod_name> it sh`  | Iteract with a pod |
 | `kubectl get deployment <deployment_name> -o yaml`  | Get yaml format of the deployment configuration |
 | `kubectl describe service <service_name>`  | Get details about a service |
+| `kubectl get pod <pod_name> -o wide`  | Get details about a pod |
+| `kubectl describe pod <pod_name> `  | Get details & eventes about a pod |
+| `kubectl logs <pod_name> `  | Get logs of a pod |
 
 ## Documentation ## 
 https://udemy.com/course/docker-kubernetes-the-practical-guide/learn/lecture/22627841#overview
